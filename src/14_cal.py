@@ -31,11 +31,19 @@ import sys
 import calendar
 from datetime import datetime
 
-month = input("Enter month: ")
-year = input("Enter year: ")
+date = datetime.today()
+arg = sys.argv
 
-# if month != datetime
+def cal():
+    if len(arg) == 1:
+        print(calendar.month(date.year, date.month))
+    elif len(arg) == 2 and int(arg[1]) in range(1, 13):
+        print(calendar.month(date.year, int(arg[1])))
+    elif len(arg) == 3:
+        print(calendar.month(int(arg[2]), int(arg[1])))
+    else:
+        print("This program accepts arguments in the form of '14_cal.py [month] [year]'")
+        sys.exit()
 
 
-
-print(calendar.month(month, year))
+cal()

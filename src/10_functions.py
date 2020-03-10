@@ -11,8 +11,7 @@ def is_even(x):
 
 
 # Read a number from the keyboard
-num = input("Enter a number: ")
-num = int(num)
+num = int(input("Enter a number: "))
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
