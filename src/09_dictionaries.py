@@ -14,6 +14,7 @@ has the following keys:
  - lon: a signed integer representing a longitude value
  - name: a name string for this location
 """
+from os import system
 
 waypoints = [
     {
@@ -32,7 +33,7 @@ waypoints = [
         "name": "a third place"
     }
 ]
-
+system("clear")
 # Add a new waypoint to the list
 # YOUR CODE HERE
 waypoints.append({"lat": 40, "lon": -120, "name": "somewhere scary"})
@@ -46,6 +47,7 @@ waypoints.append({"lat": 40, "lon": -120, "name": "somewhere scary"})
 # YOUR CODE HERE
 for i in waypoints:
     for k, v in i.items():
+       
         if v == "a place":
             i.update({"lon": -130, "name": "not a real place"})
 
@@ -54,3 +56,4 @@ for i in waypoints:
 for i in waypoints:
     for k, v in i.items():
         print(v)
+

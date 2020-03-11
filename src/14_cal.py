@@ -43,8 +43,8 @@ def cal():
     elif len(arg) == 3:
         print(calendar.month(int(arg[2]), int(arg[1])))
     else:
-        print(
-            "This program accepts arguments in the form of '14_cal.py [month] [year]'")
+        print("This program accepts arguments in the form of '14_cal.py [month] [year]'")
+        exit(0)
 
 
 cal()
