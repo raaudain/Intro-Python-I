@@ -47,7 +47,6 @@ waypoints.append({"lat": 40, "lon": -120, "name": "somewhere scary"})
 # YOUR CODE HERE
 for i in waypoints:
     for k, v in i.items():
-       
         if v == "a place":
             i.update({"lon": -130, "name": "not a real place"})
 
