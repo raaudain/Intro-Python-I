@@ -34,6 +34,7 @@ from datetime import datetime
 date = datetime.today()
 arg = sys.argv
 
+
 def cal():
     if len(arg) == 1:
         print(calendar.month(date.year, date.month))
@@ -42,8 +43,8 @@ def cal():
     elif len(arg) == 3:
         print(calendar.month(int(arg[2]), int(arg[1])))
     else:
-        print("This program accepts arguments in the form of '14_cal.py [month] [year]'")
-        sys.exit()
+        print(
+            "This program accepts arguments in the form of '14_cal.py [month] [year]'")
 
 
 cal()
